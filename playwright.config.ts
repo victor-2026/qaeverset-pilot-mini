@@ -3,5 +3,5 @@ export default defineConfig({
   testDir: './tests',
   timeout: 30000,
   retries: 0,
-  use: { baseURL: 'http://localhost:4173', headless: true },
+  use: { baseURL: 'https://victor-2026.github.io/qaeverset-pilot-mini/', headless: true },
 });
