@@ -30,5 +30,6 @@ test('username placeholder is correct', async ({ page }) => {
 
 test('password is masked', async ({ page }) => {
   await page.goto('/qaeverset-pilot-mini/');
+  await expect(page.locator('input[name="password"]')).toBeVisible();
   await expect(page.locator('input[name="password"]')).toHaveAttribute('type', 'password');
 });
