@@ -24,6 +24,7 @@ test('login button is visible', async ({ page }) => {
 
 test('username placeholder is correct', async ({ page }) => {
   await page.goto('/qaeverset-pilot-mini/');
+  await expect(page.locator('input[name="username"]')).toBeVisible();
   await expect(page.locator('input[name="username"]')).toHaveAttribute('placeholder', 'Username');
 });
 
